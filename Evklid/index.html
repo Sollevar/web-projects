@@ -16,7 +16,7 @@
 <body>
   <header class="header">
     <div class=" container header__container flex">
-      <button class="header__burger btn-reset">
+      <button class="header__burger btn-reset" tabindex="0" aria-label="открыть навигацию">
         <span class="burger__line">
         </span>
         <span class="burger__line">
@@ -30,24 +30,24 @@
       <nav class=" nav header__nav">
         <ul class="nav__list list-reset flex">
           <li class="nav__item">
-            <a href="#about" class="nav__link">О нас</a>
+            <a href="#about" class="nav__link" aria-label="О нас">О нас</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Проекты</a>
+            <a href="" class="nav__link" aria-label="Проекты">Проекты</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Этапы</a>
+            <a href="" class="nav__link" aria-label="Этапы">Этапы</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Отзывы</a>
+            <a href="" class="nav__link" aria-label="Отзывы">Отзывы</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Контакты</a>
+            <a href="" class="nav__link" aria-label="Контакты">Контакты</a>
           </li>
         </ul>
       </nav>
       <div class="search__panel">
-      <a class="nav__search nav__search-link">
+      <a class="nav__search nav__search-link" aria-label="Поиск" tabindex="0">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="7.56126" height="1.89031"
             transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" />
@@ -58,14 +58,14 @@
       </a>
       <form class="search__form flex"  method="post" action="https://jsonplaceholder.typicode.com/posts">
         <input type="text" class="search__area" name="search-message" placeholder="Что будем искать?" maxlength="15" required/>
-        <button class="search__send btn-reset">
+        <button class="search__send btn-reset" aria-label="Поиск">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
             <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
             </svg>
         </button>
         <a class="search__close">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0" class="svg__close" aria-label="закрыть">
             <rect x="8.95386" y="7.30444" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30444)" fill="none"/>
             <rect x="7.3042" y="15.5525" width="11.6645" height="2.33291" transform="rotate(-45 7.3042 15.5525)" fill="none"/>
             <circle cx="12" cy="12" r="11" stroke="none" stroke-width="2"/>
@@ -87,7 +87,7 @@
                   <p class="hero__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
                     остаются
                     уделом проектантов</p>
-                  <button class=" btn-reset hero__button">Заказать расчёт</button>
+                  <button class=" btn-reset hero__button" aria-label="заказать расчет">Заказать расчёт</button>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@
                 Принимая во внимание показатели успешности, перспективное планирование способствует подготовке
                 и реализации новых принципов
               </p>
-              <button class=" btn-reset about__card-left-button">Подробнее</button>
+              <button class=" btn-reset about__card-left-button" aria-label="Подробнее">Подробнее</button>
             </div>
           </article>
           <div class=" about__card about__cards-right">
@@ -186,24 +186,24 @@
         <h2 class="title how__title">
           Как мы работаем
         </h2>
-        <ul class="how__list list-reset flex">
+        <ul class="how__list list-reset flex" tabindex="0">
           <li class="how__item">
-            <a class="how__link how__link--active" data-path="one">
+            <a class="how__link how__link--active" data-path="one" aria-label=" первый шаг" tabindex="0">
               1 шаг
             </a>
           </li>
           <li class="how__item">
-            <a class="how__link" data-path="two">
+            <a class="how__link" data-path="two" aria-label="второй шаг" tabindex="0">
               2 шаг
             </a>
           </li>
           <li class="how__item">
-            <a class="how__link" data-path="three">
+            <a class="how__link" data-path="three" aria-label="третий шаг" tabindex="0">
               3 шаг
             </a>
           </li>
           <li class="how__item">
-            <a class="how__link" data-path="four">
+            <a class="how__link" data-path="four" aria-label="четвертый шаг" tabindex="0">
               4 шаг
             </a>
           </li>
@@ -249,10 +249,10 @@
               о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное
               информационно-пропагандистское обеспечение нашей деятельности позволяет.
             </p>
-            <button class=" btn-reset how__wrapper-btn-1">
+            <button class=" btn-reset how__wrapper-btn-1" aria-label="Подробнее">
               Подробнее
             </button>
-            <button class=" btn-reset how__wrapper-btn-2">
+            <button class=" btn-reset how__wrapper-btn-2" aria-label="Договор">
               Договор
             </button>
           </div>
@@ -282,7 +282,7 @@
             <a class="faq__descr faq__descr-1">
               Из чего формируется конечная стоимость проекта?
             </a>
-            <button href="" class="faq__link btn-reset accordion__control">
+            <button href="" class="faq__link btn-reset accordion__control" aria-label="открыть">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -313,7 +313,7 @@
             <a class="faq__descr faq__descr-2">
               У меня есть свой проект. Сможем ли мы его доработать / реализовать?
             </a>
-            <button href="" class="faq__link faq__link-even btn-reset accordion__control">
+            <button href="" class="faq__link faq__link-even btn-reset accordion__control" aria-label="открыть">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -345,7 +345,7 @@
               Я выбираю между разными компаниями. В чём ваше отличие?
             </a>
             <button href="" class="faq__link btn-reset accordion__control">
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="открыть">
                 <ellipse cx="25" cy="25" rx="25" ry="25" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" />
@@ -376,7 +376,7 @@
               Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
             </a>
             <button href="" class="faq__link faq__link-even btn-reset accordion__control">
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="открыть">
                 <ellipse cx="25" cy="25" rx="25" ry="25" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" />
@@ -406,7 +406,7 @@
             <a class="faq__descr faq__descr-5">
               Могу ли я вернуть деньги на каком-либо из этапов работ?
             </a>
-            <button href="" class="faq__link btn-reset accordion__control">
+            <button href="" class="faq__link btn-reset accordion__control" aria-label="открыть">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -446,37 +446,37 @@
           <nav class="footer__nav">
             <ul class="footer__nav-list list-reset">
               <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
+                <a href="" class="footer__nav-link" aria-label="о нас">
                   О нас
                 </a>
               </li>
               <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
+                <a href="" class="footer__nav-link" aria-label="проекты">
                   Проекты
                 </a>
               </li>
               <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
+                <a href="" class="footer__nav-link" aria-label="Отзывы">
                   Отзывы
                 </a>
               </li>
               <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
+                <a href="" class="footer__nav-link" aria-label="Договор оферты">
                   Договор оферты
                 </a>
               </li>
               <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
+                <a href="" class="footer__nav-link" aria-label="Договор порядка">
                   Договор порядка
                 </a>
               </li>
               <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
+                <a href="" class="footer__nav-link" aria-label="Конфиденциальность">
                   Конфиденциальность
                 </a>
               </li>
               <li class="footer__nav-item">
-                <a href="" class="footer__nav-link">
+                <a href="" class="footer__nav-link" aria-label="Партнёрское соглашение">
                   Партнёрское соглашение
                 </a>
               </li>
@@ -513,7 +513,7 @@
             <input class="form__input" type="text" name="text" placeholder="Фамилия, имя и отчество*" required />
             <input class="form__input" type="email" name="email" placeholder="Email*" required />
             <textarea class="form__textarea" name="message" required placeholder="Сообщение"></textarea>
-            <button class="footer__button btn-reset">
+            <button class="footer__button btn-reset" aria-label="Отправить данные">
               Отправить данные
             </button>
           </form>

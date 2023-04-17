@@ -419,6 +419,10 @@ body {
   padding-bottom: 106px;
 }
 
+.how__list{
+  outline: none;
+}
+
 .how__title {
   margin-bottom: 49px;
 }
@@ -980,6 +984,10 @@ body {
   padding-right: 13px;
 }
 
+.svg__close{
+  transition:outline 0.3s ease-in-out;
+}
+
 .search__close rect {
   fill: #CACACA;
 }
@@ -1054,9 +1062,13 @@ body {
   transition:stroke 0.3s ease;
 }
 
-.search__close:focus{
-  outline: 1px solid red;
-  outline-offset: 4px;
+.svg__close:focus{
+  outline: 2px solid var(--orange-color);
+  outline-offset: 2px;
+}
+
+.svg__close:hover{
+  outline: none;
 }
 
 .search__close:hover rect{
@@ -1068,9 +1080,9 @@ body {
 }
 
 .search__close:active rect{
-  fill: var(--bright-orange);
+  fill: #000000;
 }
 
 .search__close:active circle{
-  stroke: var(--bright-orange);
+  stroke: #000000;
 }
