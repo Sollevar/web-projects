@@ -621,6 +621,10 @@
     padding: 10px 42px;
   }
 
+  .about__card-left-button:hover{
+    color: #fff;
+  }
+
   .about__card-right-wrapper {
     padding-left: 0;
     padding-top: 0;
